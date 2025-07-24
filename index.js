@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const cookies = process.env.COOKIE.split('\n').map(s => s.trim())
-const games = process.env.GAMES.split('\n').map(s => s.trim())
+const cookies = process.env.COOKIE.trim().split('\n').map(s => s.trim())
+const games = process.env.GAMES.trim().split('\n').map(s => s.trim())
 const discordWebhook = process.env.DISCORD_WEBHOOK
 const discordUser = process.env.DISCORD_USER
 const msgDelimiter = ':'
